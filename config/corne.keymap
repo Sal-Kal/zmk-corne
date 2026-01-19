@@ -34,6 +34,7 @@
                              &kp SPACE &lt 1 SPACE &lt 3 ESC         &kp SPACE &lt 2 SPACE &kp SPACE
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -59,6 +60,34 @@
    &kp TILDE      &mt LSHFT MINUS  &kp PLUS      &kp LBRC     &kp RBRC   &kp PG_DN          &kp PG_UP &kp EQUAL &kp LBKT  &kp RBKT &mt RSHFT UNDER &kp GRAVE
    &mt LSHFT HOME &mt LCTRL PIPE   &mt LGUI INS  &mt LALT DEL &kp END    &kp PSCRN          &kp PG_DN &kp PLUS  &kp RALT  &kp RGUI &mt RCTRL BSLH  &kp RSHFT
                                                  &kp LGUI   &trans   &kp TAB                     &kp SPACE   &trans   &kp LALT
+                        >;
+                };
+
+                navigation_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4           &kp K_COPY  &kp K_CUT   &trans   &trans   &kp K_PASTE  &trans
+   &trans  &mo 4         &trans        &trans         &trans         &trans                 &trans      &trans      &trans   &trans   &kp RET      &kp RET
+   &trans  &trans        &trans        &trans         &trans         &trans                 &trans      &trans      &trans   &trans   &trans       &trans
+                                                   &trans   &trans   &trans                 &trans   &trans   &trans
+                        >;
+                };
+
+                scroll_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &trans  &trans    &trans    &trans   &trans   &trans           &trans  &trans   &trans   &trans   &trans   &trans
+   &trans  &trans    &trans    &trans   &trans   &trans           &trans  &trans   &trans   &trans   &kp RET  &trans
+   &trans  &trans    &trans    &trans   &trans   &trans           &trans  &trans   &trans   &trans   &trans   &trans
+                           &trans   &trans   &trans                 &trans   &trans   &trans
                         >;
                 };
         };
